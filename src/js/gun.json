@@ -1,0 +1,18 @@
+{
+  "weekend": {
+    "BasicCost": "40000",
+    "CostOfShots": {
+      "price": "35000",
+      "salesPrice": "800000"
+    }
+  },
+  "weekdays": {
+    "BasicCost": "80000",
+    "CostOfShots": {
+      "price": "55000",
+      "salesPrice": "100000"
+    }
+  },
+  "PersonalGallery": "12000",
+  "PersonalInstructor": "12000"
+}

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <title>Title</title>
+</head>
+<body class="w-full h-full bg-[#0F0F0F] font-Grtsk">
+<header class="border-b border-[#363636] mb-20 w-full fixed top-0 bg-[#0F0F0F] z-[99999999]">
+    <nav class="flex items-center justify-between relative p-6 lg:px-5 lg:py-5 z-20" aria-label="Global">
+        <div class="flex items-center gap-x-12">
+            <a href="/src/public" class="">
+                <img class="h-8 w-auto" src="/img/headerLogo.svg" alt="">
+            </a>
+            <div class="hidden lg:flex items-center lg:gap-x-9">
+                <a href="#" class="lg:hidden xl:block text-lg leading-6 text-white font-normal">Стрельба</a>
+                <a href="#" class="lg:hidden xl:block text-lg leading-6 text-white font-normal">Подарочные карты</a>
+                <a href="#" class="lg:hidden 2xl:block text-lg leading-6 text-white font-normal">Мероприятия</a>
+                <a href="#" class="xl:hidden 2xl:block text-lg leading-6 text-white font-normal">О клубе</a>
+                <div class="relative cursor-pointer">
+                    <div id="dropdownDefaultButton" class="p-2" data-dropdown-toggle="dropdown">
+                        <img src="/img/dot.svg"/>
+                    </div>
+                    <div id="dropdown" class="max-w-[275px] z-10 absolute top-6 hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm " aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Раздевалки</a>
+                            </li>
+                            <li class="lg:block xl:hidden">
+                                <a href="#" class="px-4 py-2 text-white opacity-50 hover:opacity-100">Стрельба</a>
+                            </li>
+                            <li class="lg:block xl:hidden">
+                                <a href="#" class="px-4 py-2 text-white opacity-50 hover:opacity-100">Подарочные карты</a>
+                            </li>
+                            <li class="lg:block 2xl:hidden">
+                                <a href="#" class="px-4 py-2 text-white opacity-50 hover:opacity-100">Мероприятия</a>
+                            </li>
+                            <li class="xl:block 2xl:hidden">
+                                <a href="#" class="px-4 py-2 text-white opacity-50 hover:opacity-100">О клубе</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:hidden flex items-center gap-x-5">
+            <a class="text-lg font-normal text-white" href="tel:+78325463143">+7 832 546 31 43</a>
+            <div data-burger="menu" type="button" class="burger__menu w-[50px] h-[38px] bg-[#222220]">
+                <div class="burger__menu-line one" style="transition: opacity .2s, transform .3s;"></div>
+                <div class="burger__menu-line two" style="transition: opacity .2s, transform .3s;"></div>
+                <div class="burger__menu-line three" style="transition: opacity .2s, transform .3s;"></div>
+                <div class="burger__menu-line four" style="transition: opacity .2s, transform .3s;"></div>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-x-3 2xl:gap-x-8">
+            <a class="hidden lg:block text-lg font-normal text-white" href="tel:+78325463143">+7 832 546 31 43</a>
+            <div class="w-[1px] h-9 bg-[rgba(255,_255,_255,_0.16)]"></div>
+            <div class="flex items-center gap-x-2">
+                <a href="#"><img src="/img/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="/img/vk.svg" alt=""></a>
+                <a href="#"><img src="/img/telegram.svg" alt=""></a>
+            </div>
+            <button class="flex justify-between items-center px-[30px] py-5 bg-[#1A1A19] group hover:bg-[#B9AB91] transition-colors">
+                <span class="text-lg font-normal text-white mr-4 group-hover:text-[#222220]">Даниил</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="white">
+                    <path d="M10 3.33329C8.15905 3.33329 6.66667 4.82568 6.66667 6.66663C6.66667 8.50758 8.15905 9.99996 10 9.99996C11.8409 9.99996 13.3333 8.50758 13.3333 6.66663C13.3333 4.82568 11.8409 3.33329 10 3.33329ZM5 6.66663C5 3.9052 7.23858 1.66663 10 1.66663C12.7614 1.66663 15 3.9052 15 6.66663C15 9.42805 12.7614 11.6666 10 11.6666C7.23858 11.6666 5 9.42805 5 6.66663ZM6.66667 15C5.28595 15 4.16667 16.1192 4.16667 17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5C2.5 15.1988 4.36548 13.3333 6.66667 13.3333H13.3333C15.6345 13.3333 17.5 15.1988 17.5 17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5C15.8333 16.1192 14.714 15 13.3333 15H6.66667Z"/>
+                </svg>
+            </button>
+            <button class="flex justify-between items-center px-[30px] py-5 bg-[#222220] group hover:bg-[#B9AB91] transition-colors">
+                <span class="text-lg font-normal text-[#E1DEB3] mr-4 group-hover:text-[#222220]">Забронировать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="#E1DEB3">
+                    <g clip-path="url(#clip0_85_26684)">
+                        <rect x="2.1875" y="3.66797" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-45 2.1875 3.66797)"/>
+                        <rect x="16.3203" y="2.18408" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(45 16.3203 2.18408)"/>
+                        <rect x="17.8281" y="16.3276" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(135 17.8281 16.3276)"/>
+                        <rect x="3.66406" y="17.8164" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-135 3.66406 17.8164)"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_85_26684">
+                            <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <!-- <a href="#" class="text-sm font-normal leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a> -->
+        </div>
+    </nav>
+
+    <div class="dialog__wrapper w-full h-full fixed left-0 top-0 bg-[rgba(15,_15,_15,_0.90)] z-10 opacity-0 invisible" style="transition: opacity .3s, visibility .1s;"></div>
+
+
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden  w-full h-[0%] overflow-x-auto fixed bottom-0 bg-[#1B1B1A] z-30 dialog" role="dialog" aria-modal="true" style="transition: height .3s;">
+        <div class="flex items-center gap-x-4 px-4 py-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="white">
+                <path d="M10 3.33329C8.15905 3.33329 6.66667 4.82568 6.66667 6.66663C6.66667 8.50758 8.15905 9.99996 10 9.99996C11.8409 9.99996 13.3333 8.50758 13.3333 6.66663C13.3333 4.82568 11.8409 3.33329 10 3.33329ZM5 6.66663C5 3.9052 7.23858 1.66663 10 1.66663C12.7614 1.66663 15 3.9052 15 6.66663C15 9.42805 12.7614 11.6666 10 11.6666C7.23858 11.6666 5 9.42805 5 6.66663ZM6.66667 15C5.28595 15 4.16667 16.1192 4.16667 17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5C2.5 15.1988 4.36548 13.3333 6.66667 13.3333H13.3333C15.6345 13.3333 17.5 15.1988 17.5 17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5C15.8333 16.1192 14.714 15 13.3333 15H6.66667Z"/>
+            </svg>
+            <span class="text-lg font-normal text-white">Даниил</span>
+        </div>
+        <div class="w-full h-[1px] bg-[#363636]"></div>
+        <div class="flex flex-col gap-y-[18px] px-4 py-7">
+            <a href="" class="text-[28px] font-normal text-white">Стрельба</a>
+            <a href="" class="text-[28px] font-normal text-white">Подарочные карты</a>
+            <a href="" class="text-[28px] font-normal text-white">Мероприятия</a>
+            <a href="" class="text-[28px] font-normal text-white">О клубе</a>
+            <a href="" class="text-base text-[#878787] font-normal">Парковка</a>
+            <a href="" class="text-base text-[#878787] font-normal">Арсенал</a>
+            <a href="" class="text-base text-[#878787] font-normal">Галереи</a>
+            <a href="" class="text-base text-[#878787] font-normal">Раздевалки</a>
+            <a href="" class="text-base text-[#878787] font-normal">Соревнования</a>
+        </div>
+        <div class="w-full h-[1px] bg-[#363636]"></div>
+        <div class="flex flex-col justify-center px-4 py-7">
+            <div class="flex justify-between items-center mb-[16px]">
+                <a class="bg-[url('../img/phone.svg')] bg-no-repeat bg-[left_6px] pl-9 text-white text-lg">+7 832 546 31 43</a>
+                <div class="flex items-center">
+                    <img src="/img/whatsapp.svg"/>
+                    <img src="/img/vk.svg"/>
+                    <img src="/img/telegram.svg"/>
+                </div>
+            </div>
+            <button class="flex justify-center items-center max-w-[350px] py-6 bg-[#222220] group hover:bg-[#E1DEB3]">
+                <span class="text-lg font-normal text-[#E1DEB3] mr-4 group-hover:text-[#222220]">Забронировать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="#E1DEB3">
+                    <g clip-path="url(#clip0_85_26684)">
+                        <rect x="2.1875" y="3.66797" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-45 2.1875 3.66797)"/>
+                        <rect x="16.3203" y="2.18408" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(45 16.3203 2.18408)"/>
+                        <rect x="17.8281" y="16.3276" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(135 17.8281 16.3276)"/>
+                        <rect x="3.66406" y="17.8164" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-135 3.66406 17.8164)"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_85_26684">
+                            <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+    </div>
+</header>
+    <main class="pt-[100px] lg:pt-[150px]">
+        <section class="-mt-10 mb-16 sm:mb-[80px]">
+            <div class="container desk:px-0 xl:px-20">
+                <a href="/src/public" class="flex gap-x-4 text-white text-[17px] mb-9  sm:mb-[64px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="20" viewBox="0 0 8 20" fill="none">
+                        <path d="M7 17L1 11.5L7 6" stroke="white"/>
+                    </svg>
+                    Вернуться назад
+                </a>
+                <div class="flex lg:justify-between gap-y-8 items-start flex-col lg:flex-row desk:justify-normal desk:gap-x-[339px] lg:items-center">
+                    <h1 class="2xl:max-w-[1050px] lg:max-w-[800px] text-white md:text-[64px] text-3xl font-[600] md:leading-[70px] leading-8 break-all uppercase">Стрелковый клуб 7.62 открывает галерею на 500 метров</h1>
+                    <div class="flex flex-row items-start gap-x-10 lg:flex-col  lg:gap-y-11 ">
+                        <div class="">
+                            <p class="text-[17px] font-normal leading-5 text-[#878787] mb-3">Дата</p>
+                            <p class="text-xl text-white font-normal leading-[29px]">12.09.2023</p>
+                        </div>
+                        <div>
+                            <p class="text-[17px] font-normal leading-5 text-[#878787] mb-3">Поделиться</p>
+                            <div class="flex items-center gap-x-4">
+                                <a href=""><img src="/img/telegram.svg" alt=""></a>
+                                <a href=""><img src="/img/vk.svg" alt=""></a>
+                                <a href=""><img src="/img/instagram.svg" alt=""></a>
+                                <a href=""><img src="/img/whatsapp.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-[40px] sm:mb-[120px]">
+            <div class="container">
+                <img src="/img/newsBack.webp" alt="">
+            </div>
+        </section>
+        <section class="mb-20 sm:mb-[180px]">
+            <div class="container">
+                <div class="xl:px-4 3xl:px-0 flex items-baseline flex-col lg:flex-row lg:gap-x-[60px] desk:gap-x-[151px]">
+                    <div class="flex flex-col lg:basis-[700px] desk:basis-[856px] gap-y-[20px] sm:gap-y-[120px] detail-block">
+                        <div>
+                            <h3 class="">Открываем новую страницу в истории клуба 7.62</h3>
+                            <p class="">С гордостью и радостью мы объявляем о завершении работ по открытию новой галереи на дальность 500 метров в нашем стрелковом клубе 7.62! Это событие открывает перед вами бесконечные возможности для совершенствования ваших навыков стрельбы и дает вам уникальный опыт, который вы не найдете нигде более.</p>
+                            <p class="">Открытие галереи на 500 метров - это важный шаг в развитии нашего клуба. Мы приглашаем всех членов присоединиться к нам в этом уникальном путешествии и преодолеть новые вершины в мире стрельбы.</p>
+                            <img src="/img/newsBlock.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="">Идеальное Место для Тренировок
+                                и Соревнований</h3>
+                            <p class="">Новая галерея будет доступна как для индивидуальных тренировок, так и для организации соревнований на мировом уровне. Мы приглашаем вас использовать это уникальное пространство для достижения ваших стрелковых целей и участия в захватывающих мероприятиях.</p>
+                        </div>
+                        <div>
+                            <h3 class="">Безопасность Превыше Всего</h3>
+                            <p class="">Помните, что строгое соблюдение правил безопасности остается нашим главным приоритетом. Пожалуйста, следите за инструкциями и рекомендациями наших инструкторов и персонала, чтобы гарантировать безопасность всех участников.</p>
+                            <p class="">Мы приглашаем всех нашей стрелковой семьи присоединиться к нам и попробовать свои силы на нашей новой галерее на 500 метров. Новые вызовы, новые достижения и новые возможности ждут вас!</p>
+                        </div>
+                        <div>
+                            <h3 class="">Расписание</h3>
+                            <p class="">Следите за расписанием тренировок и соревнований на нашем сайте и в социальных сетях. Мы уверены, что новая галерея станет вашим любимым местом для тренировок и достижения новых высот.</p>
+                            <p class="">Благодарим вас за вашу преданность клубу 7.62 и страсть к стрельбе. Встречайте новые вызовы и дистанции с нами!</p>
+                            <p class="">С уважением, команда стрелкового клуба 7.62</p>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex flex-col basis-[733px]  md:sticky md:top-0">
+                        <h2 class="md:text-6xl text-white leading-[120px] font-medium uppercase text-2xl mb-[36px]">наши программы</h2>
+                        <div class="flex gap-[25px] justify-center 2xl:justify-end flex-wrap mb-[65px]">
+                            <div class="flex flex-col justify-between items-start grow basis-0 p-[18px_18px_32px_18px] bg-[#1A1A19]">
+                                <div class="flex flex-col items-start">
+                                    <div class="w-full h-[243px] bg-[#222220] mb-[32px]">
+                                        <img class="w-full h-full object-cover" src="/img/gang.png" alt="">
+                                    </div>
+                                    <h3 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодого бойца dfasfsdfsdf sdfsdfsdafsd sdaf  fsdfsdfsd sdfsd s</h3>
+                                    <p class=" text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)] mb-[18px]">Программы, fsdfsdfsdfsdf safdasdfsadf sadfsafd saf sf fsdfsadfsadf sdf sfsdafds dsfsdafds sadf sadfasdf fds включающие обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                                </div>
+                                <div class="flex items-center gap-x-[19px] mt-[25px]">
+                                    <span class="text-white text-xl  font-normal">20 500 ₽</span>
+                                    <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-between items-start grow basis-0 p-[18px_18px_32px_18px] bg-[#1A1A19]">
+                                <div class="flex flex-col items-start">
+                                    <div class="w-full h-[243px] bg-[#222220] mb-[32px]">
+                                        <img class="w-full h-full object-cover" src="/img/slide1.png" alt="">
+                                    </div>
+                                    <h3 class="text-xl font-medium leading-[24px] text-white mb-[18px] break-all">Курс молодогоd sdfsd s</h3>
+                                    <p class=" text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)] mb-[18px] break-all">Программы, е обучение навыкам безопасного обращения с оружием, метк е обучение навыкам безопасного обращения с оружием, метк е обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                                </div>
+                                <div class="flex items-center gap-x-[19px] mt-[25px]">
+                                    <span class="text-white text-xl font-normal">20 500 ₽</span>
+                                    <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="#" class="btn__custom hover:active px-[50px] py-[26px] bg-transparent border border-[#2D2D2B]" data-gun="rifle">
+                                <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] "></span>
+                                <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] "></span>
+                                <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] "></span>
+                                <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] "></span>
+                                <span class="btn__content">Больше курсов</span>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="lg:hidden w-full">
+                        <div class="swiper w-full h-full myProgram pb-[30px]">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><div class="flex flex-col basis-[350px]  items-center bg-[#1A1A19] gap-y-8 p-[18px_15px_32px_18px]">
+                                <div class="w-[298px] py-11 flex justify-center items-center bg-[#222220]">
+                                    <img src="/img/gang.png" alt="">
+                                </div>
+                                <div class="px-2">
+                                    <h4 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодого бойца</h4>
+                                    <p class="min-h-[100px] text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)]">Программы, включающие обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                                    <div class="flex items-center gap-x-[19px]  mt-[25px]">
+                                        <span class="text-white text-xl font-normal">20 500 ₽</span>
+                                        <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div></div>
+                          <div class="swiper-slide"><div class="flex flex-col basis-[350px]  items-center bg-[#1A1A19] gap-y-8 p-[18px_15px_32px_18px]">
+                                <div class="w-[298px] py-11 flex justify-center items-center bg-[#222220]">
+                                    <img src="/img/gang.png" alt="">
+                                </div>
+                                <div class="px-2">
+                                    <h4 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодого бойца</h4>
+                                    <p class="min-h-[100px] text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)]">Программы, включающие обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                                    <div class="flex items-center gap-x-[19px]  mt-[25px]">
+                                        <span class="text-white text-xl font-normal">20 500 ₽</span>
+                                        <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div></div>
+                          <div class="swiper-slide"><div class="flex flex-col basis-[350px]  items-center bg-[#1A1A19] gap-y-8 p-[18px_15px_32px_18px]">
+                                <div class="w-[298px] py-11 flex justify-center items-center bg-[#222220]">
+                                    <img src="/img/gang.png" alt="">
+                                </div>
+                                <div class="px-2">
+                                    <h4 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодого бойца</h4>
+                                    <p class="min-h-[100px] text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)]">Программы, включающие обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                                    <div class="flex items-center gap-x-[19px]  mt-[25px]">
+                                        <span class="text-white text-xl font-normal">20 500 ₽</span>
+                                        <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div></div>
+                          <div class="swiper-slide"><div class="flex flex-col basis-[350px]  items-center bg-[#1A1A19] gap-y-8 p-[18px_15px_32px_18px]">
+                                <div class="w-[298px] py-11 flex justify-center items-center bg-[#222220]">
+                                    <img src="/img/gang.png" alt="">
+                                </div>
+                                <div class="px-2">
+                                    <h4 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодого бойца</h4>
+                                    <p class="min-h-[100px] text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)]">Программы, включающие обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                                    <div class="flex items-center gap-x-[19px]  mt-[25px]">
+                                        <span class="text-white text-xl font-normal">20 500 ₽</span>
+                                        <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                                    </div>
+                                </div>
+                            </div></div>
+                        </div>
+                        <div class="swiper-pagination__custom z-50"></div>
+                      </div>
+                      </div>
+        </section>
+        <section class="mb-9 sm:mb-[180px] sm:px-5 2xl:px-0">
+            <div class="container flex flex-col gap-x-4 lg:flex-row items-end">
+                <div class="flex flex-col w-full items-start mb-5">
+                    <h2 class="title max-w-[704px] mb-14">у нас не только стреляют</h2>
+                    <p class="md:hidden text-white text-left text-xl font-normal leading-6 max-w-[454px] mb-20 opacity-50">Мы предлагаем гостям в перерывах между стрельбой посетить наши кафе и магазин с брендированными сувенирами</p>
+                    <div class="w-full h-[570px] bg-no-repeat bg-center flex items-end justify-between py-5 px-4 md:px-8" style="background-image: url('../img/cafe.png');">
+                        <div class="w-full flex items-center justify-between">
+                            <h2 class="text-[22px] leading-7 sm:text-4xl font-medium sm:leading-[43px] uppercase text-white">кафе</h2>
+                            <a href="#" class="sm:py-[25px] sm:px-10 py-5 px-[30px] bg-[rgba(15,_15,_15,_0.50)] backdrop-filter leading-5 text-white btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full items-start mb-5">
+                    <p class="text-white text-left text-xl font-normal leading-6 max-w-[454px] mb-20 opacity-50 hidden md:block">Мы предлагаем гостям в перерывах между стрельбой посетить наши кафе и магазин с брендированными сувенирами</p>
+                    <div class="w-full h-[570px] flex items-end  justify-between py-5 px-4 md:px-8" style="background-image: url('../img/market.png');">
+                        <div class="w-full flex justify-between items-center">
+                            <h2 class="text-[22px] leading-7 sm:text-4xl font-medium sm:leading-[43px] uppercase text-white">магазин</h2>
+                            <a href="#" class="sm:py-[25px] sm:px-10 py-5 px-[30px] bg-[rgba(15,_15,_15,_0.50)] backdrop-filter text-[17px] font-normal leading-5 text-white btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-9 md:mb-[180px] sm:px-5 2xl:px-0">
+            <div class="container">
+                <div class="max-w-[783px]">
+                    <p class="mb-4 sm:mb-9 text-[#878787] text-sm sm:text-xl font-normal leading-5">Подпишитесь, чтобы получать новости</p>
+                    <div class="border-b flex justify-between gap-x-6 border-[#3A3A3A] pb-5 mb-6 sm:mb-9">
+                        <input type="text" class="w-full border-none outline-none ring-offset-0 bg-transparent text-white text-[22px] sm:text-6xl font-medium leading-[26px] sm:leading-[72px]"/>
+                        <button class="py-5 px-6 bg-[#1F1F1F] btn group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 28 18">
+                                <path class="group-hover:stroke-[#0F0F0F]" d="M0 9H26M26 9L18.525 1.5M26 9L18.525 16.5" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="inline-flex items-center">
+                        <label
+                                class="relative flex cursor-pointer items-center rounded-full p-3"
+                                for="login"
+                                data-ripple-dark="true"
+                        >
+                            <input
+                                    id="login"
+                                    type="checkbox"
+                                    class="before:content[''] peer relative w-[18px] h-[18px] sm:h-6 sm:w-6 cursor-pointer appearance-none border border-[rgba(58,_58,_58,_1)] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity hover:before:opacity-10"
+                            />
+                            <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <label
+                                class="mt-px cursor-pointer select-none font-normal text-xs sm:text-lg text-[#878787]"
+                                for="login"
+                        >
+                            Я прочитал и принимаю правила <a href="#" class="text-white text-xs sm:text-lg font-normal  underline"> Политики конфиденциальности</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pb-[60px]">
+      <div class="container">
+        <div class="flex flex-col sm:flex-row justify-between items-start gap-y-11 sm:gap-0 sm:px-5 2xl:px-0">
+          <div class="flex flex-col gap-0 sm:gap-y-[181px]">
+            <img class="w-[151px] sm:w-full" src="/img/footerLogo.svg"/>
+            <div class="hidden sm:flex items-center gap-x-2">
+              <a href="#"><img src="/img/whatsapp.svg" alt=""></a>
+              <a href="#"><img src="/img/vk.svg" alt=""></a>
+              <a href="#"><img src="/img/telegram.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-[80px]">
+            <div class="flex flex-col sm:flex-row justify-between items-baseline gap-y-11 sm:gap-x-[60px] md:gap-x-[60px] xl:gap-x-[161px]">
+              <div class="">
+                <h4 class="text-white text-xl font-normal leading-5 mb-8">Тир</h4>
+                <div class="hidden md:flex flex-col gap-y-4">
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Стрельба</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Подарочные карты</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">О клубе</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Парковка</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Арсенал</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Галереи</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Раздевалки</a>
+                </div>
+                <div class="flex gap-x-8 sm:hidden">
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Стрельба</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Подарочные карты</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">О клубе</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Парковка</a>
+                  </div>
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Арсенал</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Галереи</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Раздевалки</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-white text-xl font-normal leading-5 mb-8">Жизнь</h4>
+                <div class="hidden sm:flex flex-col gap-y-4">
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Мероприятия</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Новости</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Соревнования</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">О нас</a>
+                </div>
+                <div class="flex gap-x-8 sm:hidden">
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Мероприятия</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Новости</a>
+                  </div>
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Соревнования</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">О нас</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-white text-xl font-normal leading-5 mb-8">Меню</h4>
+                <div class="hidden sm:flex flex-col gap-y-4">
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Мероприятия</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Новости</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Соревнования</a>
+                </div>
+                <div class="sm:hidden flex gap-x-8">
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Мероприятия</a>
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Новости</a>
+                  </div>
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-lg font-normal leading-5 text-[#878787]">Соревнования</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sm:hidden flex justify-between items-center">
+              <a href="#"><img src="/img/telegram.svg" alt=""></a>
+              <div class="w-[1px] h-[22px] bg-[#383837]"></div>
+              <a href="#"><img src="/img/vk.svg" alt=""></a>
+              <div class="w-[1px] h-[22px] bg-[#383837]"></div>
+              <a href="#"><img src="/img/instagram.svg" alt=""></a>
+              <div class="w-[1px] h-[22px] bg-[#383837]"></div>
+              <a href="#"><img src="/img/whatsapp.svg" alt=""></a>
+            </div>
+            <a href="#" class="hidden sm:block text-lg font-normal text-white mb-6">Политика конфиденциальности</a>
+          </div>
+          <div class="w-full sm:hidden text-base text-center text-[#878787] font-normal leading-4">Тир 762 © 2023</div>
+        </div>
+      </div>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/news.js"></script>
+</body>
+</html>

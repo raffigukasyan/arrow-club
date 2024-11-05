@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body class="bg-[#0F0F0F]">
+<header id="header-navigation" class="sticky top-0 bg-[#0F0F0F] z-[30]">
+    <nav class="flex items-center justify-between relative p-6 sm:px-[30px] lg:py-5 z-20 transition duration-500"
+         aria-label="Global">
+        <div class="flex items-center gap-x-12">
+            <a href="#" class="">
+                <img class="h-8 w-auto" src="/img/headerLogo.svg" alt="">
+            </a>
+            <div class="hidden lg:block">
+                <ul class="flex items-center lg:gap-x-9">
+                    <li><a href="#" class="lg:hidden xl:block text-lg leading-6 text-white font-normal">Стрельба</a>
+                    </li>
+                    <li><a href="#" class="lg:hidden book:block text-lg leading-6 text-white font-normal">Подарочные
+                        карты</a></li>
+                    <li><a href="#" class="lg:hidden 2xl:block text-lg leading-6 text-white font-normal">Мероприятия</a>
+                    </li>
+                    <li class="dropdown-link link-ic">
+                        <div class="flex gap-x-2 items-center">
+                            <a href="#" class="lg:hidden 3xl:block text-lg leading-6 text-white font-normal">О клубе</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 13 9"
+                                 class="linkIcon transition-transform" fill="none">
+                                <path d="M12.3604 1.14004L6.36035 7.86005L0.360351 1.14004" stroke="white"
+                                      stroke-width="0.923077"/>
+                            </svg>
+                        </div>
+                        <div class="dropdown max-w-[275px] z-10 absolute top-[4.5rem] hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm">
+                                <li>
+                                    <a href="#"
+                                       class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown-link">
+                        <div id="dropdownDefaultButton" class="p-2">
+                            <img src="/img/dot.svg"/>
+                        </div>
+                        <div class="dropdown max-w-[275px] z-10 absolute top-[4rem] hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm " aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                       class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Раздевалки</a>
+                                </li>
+                                <li class="lg:block xl:hidden">
+                                    <a href="#"
+                                       class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Стрельба</a>
+                                </li>
+                                <li class="lg:block xl:hidden">
+                                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Подарочные
+                                        карты</a>
+                                </li>
+                                <li class="lg:block 2xl:hidden">
+                                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Мероприятия</a>
+                                </li>
+                                <li class="lg:block 3xl:hidden">
+                                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">О
+                                        клубе</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dropdown-link relative cursor-pointer">
+                    <div class="dropdown max-w-[275px] z-10 absolute top-6 hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm " aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Раздевалки</a>
+                            </li>
+                            <li class="lg:block xl:hidden">
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Стрельба</a>
+                            </li>
+                            <li class="lg:block xl:hidden">
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Подарочные
+                                    карты</a>
+                            </li>
+                            <li class="lg:block 2xl:hidden">
+                                <a href="#"
+                                   class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Мероприятия</a>
+                            </li>
+                            <li class="lg:block 3xl:hidden">
+                                <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">О клубе</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:hidden flex items-center gap-x-5">
+            <a class="text-lg font-normal text-white" href="tel:+78325463143">+7 832 546 31 43</a>
+            <div data-burger="menu" type="button" class="burger__menu w-[50px] h-[38px] bg-[#222220]">
+                <div class="burger__menu-line one" style="transition: opacity .2s, transform .3s;"></div>
+                <div class="burger__menu-line two" style="transition: opacity .2s, transform .3s;"></div>
+                <div class="burger__menu-line three" style="transition: opacity .2s, transform .3s;"></div>
+                <div class="burger__menu-line four" style="transition: opacity .2s, transform .3s;"></div>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-x-3 xl:gap-x-8">
+            <a class="hidden lg:block text-lg font-normal text-white" href="tel:+78325463143">+7 832 546 31 43</a>
+            <div class="w-[1px] h-9 bg-[rgba(255,_255,_255,_0.16)]"></div>
+            <div class="flex items-center gap-x-2">
+                <a href="#"><img src="/img/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="/img/vk.svg" alt=""></a>
+                <a href="#"><img src="/img/telegram.svg" alt=""></a>
+            </div>
+            <button class="flex justify-between items-center px-[30px] py-5 bg-[#1A1A19] group hover:bg-[#B9AB91] transition-colors">
+                <span class="text-lg font-normal text-white mr-4 group-hover:text-[#222220]">Даниил</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20"
+                     viewBox="0 0 20 20" fill="white">
+                    <path d="M10 3.33329C8.15905 3.33329 6.66667 4.82568 6.66667 6.66663C6.66667 8.50758 8.15905 9.99996 10 9.99996C11.8409 9.99996 13.3333 8.50758 13.3333 6.66663C13.3333 4.82568 11.8409 3.33329 10 3.33329ZM5 6.66663C5 3.9052 7.23858 1.66663 10 1.66663C12.7614 1.66663 15 3.9052 15 6.66663C15 9.42805 12.7614 11.6666 10 11.6666C7.23858 11.6666 5 9.42805 5 6.66663ZM6.66667 15C5.28595 15 4.16667 16.1192 4.16667 17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5C2.5 15.1988 4.36548 13.3333 6.66667 13.3333H13.3333C15.6345 13.3333 17.5 15.1988 17.5 17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5C15.8333 16.1192 14.714 15 13.3333 15H6.66667Z"/>
+                </svg>
+            </button>
+            <button data-btn="reservation"
+                    class="flex justify-between items-center px-[30px] py-5 bg-[#222220] group hover:bg-[#B9AB91] transition-colors">
+                <span class="text-lg font-normal text-[#E1DEB3] mr-4 group-hover:text-[#222220]">Забронировать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20"
+                     viewBox="0 0 20 20" fill="#E1DEB3">
+                    <g clip-path="url(#clip0_85_26684)">
+                        <rect x="2.1875" y="3.66797" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(-45 2.1875 3.66797)"/>
+                        <rect x="16.3203" y="2.18408" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(45 16.3203 2.18408)"/>
+                        <rect x="17.8281" y="16.3276" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(135 17.8281 16.3276)"/>
+                        <rect x="3.66406" y="17.8164" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(-135 3.66406 17.8164)"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_85_26684">
+                            <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <!-- <a href="#" class="text-sm font-normal leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a> -->
+        </div>
+    </nav>
+
+    <div class="dialog__wrapper w-full h-full fixed left-0 top-0 bg-[rgba(15,_15,_15,_0.90)] z-10 opacity-0 invisible"
+         style="transition: opacity .3s, visibility .1s;"></div>
+
+
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden flex flex-col justify-between  w-full h-[0%] fixed bottom-0 bg-[#1B1B1A] z-30 dialog"
+         role="dialog" aria-modal="true" style="transition: height .3s;">
+
+        <!--      КНОПКА ЛИЧНЕГО КАБИНЕТА ПОКА ЧТО СКРЫТ-->
+        <!--      <div class="flex items-center gap-x-4 px-4 py-7">-->
+        <!--        <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="white">-->
+        <!--          <path d="M10 3.33329C8.15905 3.33329 6.66667 4.82568 6.66667 6.66663C6.66667 8.50758 8.15905 9.99996 10 9.99996C11.8409 9.99996 13.3333 8.50758 13.3333 6.66663C13.3333 4.82568 11.8409 3.33329 10 3.33329ZM5 6.66663C5 3.9052 7.23858 1.66663 10 1.66663C12.7614 1.66663 15 3.9052 15 6.66663C15 9.42805 12.7614 11.6666 10 11.6666C7.23858 11.6666 5 9.42805 5 6.66663ZM6.66667 15C5.28595 15 4.16667 16.1192 4.16667 17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5C2.5 15.1988 4.36548 13.3333 6.66667 13.3333H13.3333C15.6345 13.3333 17.5 15.1988 17.5 17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5C15.8333 16.1192 14.714 15 13.3333 15H6.66667Z"/>-->
+        <!--        </svg>-->
+        <!--        <span class="text-lg font-normal text-white">Даниил</span>-->
+        <!--      </div>-->
+        <div class="w-full h-[1px] bg-[#363636]"></div>
+        <div class="flex overflow-x-auto flex-col gap-y-[18px] px-4 py-7">
+            <a href="" class="text-[28px] font-normal text-white">Стрельба</a>
+            <a href="" class="text-[28px] font-normal text-white">Подарочные карты</a>
+            <a href="" class="text-[28px] font-normal text-white">Мероприятия</a>
+            <a href="" class="text-[28px] font-normal text-white">О клубе</a>
+            <a href="" class="text-base text-[#878787] font-normal">Парковка</a>
+            <a href="" class="text-base text-[#878787] font-normal">Арсенал</a>
+            <a href="" class="text-base text-[#878787] font-normal">Галереи</a>
+            <a href="" class="text-base text-[#878787] font-normal">Раздевалки</a>
+            <a href="" class="text-base text-[#878787] font-normal">Соревнования</a>
+        </div>
+        <div class="w-full h-[1px] bg-[#363636]"></div>
+        <div class="flex flex-col justify-center px-4 py-7">
+            <div class="flex justify-between items-center mb-[16px]">
+                <a class="bg-[url('/img/phone.svg')] bg-no-repeat bg-[left_5px] pl-8 text-white text-[17px]">+7 832 546
+                    31 43</a>
+                <div class="flex items-center">
+                    <img src="/img/whatsapp.svg"/>
+                    <img src="/img/vk.svg"/>
+                    <img src="/img/telegram.svg"/>
+                </div>
+            </div>
+            <button data-btn="reservation"
+                    class="flex justify-center items-center w-full py-6 bg-[#222220] group hover:bg-[#E1DEB3]">
+                <span class="text-lg font-normal text-[#E1DEB3] mr-4 group-hover:text-[#222220]">Забронировать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20"
+                     viewBox="0 0 20 20" fill="#E1DEB3">
+                    <g clip-path="url(#clip0_85_26684)">
+                        <rect x="2.1875" y="3.66797" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(-45 2.1875 3.66797)"/>
+                        <rect x="16.3203" y="2.18408" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(45 16.3203 2.18408)"/>
+                        <rect x="17.8281" y="16.3276" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(135 17.8281 16.3276)"/>
+                        <rect x="3.66406" y="17.8164" width="2.1055" height="7.89564" rx="1.05275"
+                              transform="rotate(-135 3.66406 17.8164)"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_85_26684">
+                            <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+    </div>
+</header>
+<!--<main class="">-->
+<!--    <div class="container">-->
+<!--        <h2 class="font-normal font-Armata text-6xl leading-[72px] uppercase text-white mb-3.5">Ошибка 404</h2>-->
+<!--        <div class="flex flex-col justify-between items-center">-->
+<!--            <div class="flex justify-center items-center">-->
+<!--                <span class="font-Armata text-[#222221] text-[400px] uppercase leading-[120%] -tracking-[32px]">4</span>-->
+<!--                <svg width="411" height="428" viewBox="0 0 411 428" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M255.5 215C255.5 243.498 233.284 266.5 206 266.5C178.716 266.5 156.5 243.498 156.5 215C156.5 186.502 178.716 163.5 206 163.5C233.284 163.5 255.5 186.502 255.5 215Z" fill="#AA9A80" stroke="#222221" stroke-width="3"/>-->
+<!--                    <path d="M278.5 215C278.5 256.754 245.985 290.5 206 290.5C166.015 290.5 133.5 256.754 133.5 215C133.5 173.246 166.015 139.5 206 139.5C245.985 139.5 278.5 173.246 278.5 215Z" stroke="#222221" stroke-width="3"/>-->
+<!--                    <path d="M301.5 215C301.5 270.01 258.687 314.5 206 314.5C153.313 314.5 110.5 270.01 110.5 215C110.5 159.99 153.313 115.5 206 115.5C258.687 115.5 301.5 159.99 301.5 215Z" stroke="#222221" stroke-width="3"/>-->
+<!--                    <path d="M324.5 215C324.5 283.265 271.389 338.5 206 338.5C140.611 338.5 87.5 283.265 87.5 215C87.5 146.735 140.611 91.5 206 91.5C271.389 91.5 324.5 146.735 324.5 215Z" stroke="#222221" stroke-width="3"/>-->
+<!--                    <path d="M347.5 215C347.5 296.521 284.091 362.5 206 362.5C127.909 362.5 64.5 296.521 64.5 215C64.5 133.479 127.909 67.5 206 67.5C284.091 67.5 347.5 133.479 347.5 215Z" stroke="#222221" stroke-width="3"/>-->
+<!--                    <path d="M370.5 215C370.5 309.776 296.793 386.5 206 386.5C115.207 386.5 41.5 309.776 41.5 215C41.5 120.224 115.207 43.5 206 43.5C296.793 43.5 370.5 120.224 370.5 215Z" stroke="#222221" stroke-width="3"/>-->
+<!--                    <line x1="205.5" y1="2" x2="205.5" y2="428" stroke="#222221" stroke-width="3"/>-->
+<!--                    <line x1="204.5" y1="-0.00350466" x2="205.5" y2="427.996" stroke="#222221" stroke-width="3"/>-->
+<!--                    <path d="M231.5 215C231.5 230.238 219.586 242.5 205 242.5C190.414 242.5 178.5 230.238 178.5 215C178.5 199.762 190.414 187.5 205 187.5C219.586 187.5 231.5 199.762 231.5 215Z" stroke="#0F0F0F" stroke-width="3"/>-->
+<!--                    <line x1="411" y1="214.5" y2="214.5" stroke="#222221" stroke-width="3"/>-->
+<!--                    <line x1="257" y1="214.5" x2="155" y2="214.5" stroke="#0F0F0F" stroke-width="3"/>-->
+<!--                    <line x1="204.5" y1="162" x2="204.5" y2="268" stroke="#0F0F0F" stroke-width="3"/>-->
+<!--                </svg>-->
+<!--                <span class="font-Armata text-[#222221] text-[400px] uppercase leading-[120%] -tracking-[32px]">4</span>-->
+<!--            </div>-->
+<!--            <p class="text-center text-[#E1DEB3] text-[26px] mb-14 font-normal">Ошибка 404. Страницы не существует или он была удалена.</p>-->
+<!--            <button class="group btn__custom py-4 mb-10 bg-transparent border border-[#2D2D2B]">-->
+<!--                <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l transition-opacity "></span>-->
+<!--                <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l  transition-opacity"></span>-->
+<!--                <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r  transition-opacity"></span>-->
+<!--                <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r transition-opacity"></span>-->
+<!--                <span class="btn__content">На главную страницу</span>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--        <img src="/img/sticks.svg" alt="">-->
+<!--    </div>-->
+<!--</main>-->
+
+<main class="grid min-h-full place-items-center pt-5 pb-8">
+    <div class="container">
+        <h2 class="font-normal font-Armata text-2xl sm:text-6xl leading-[72px] uppercase text-white">Ошибка 404</h2>
+        <div class="flex flex-col justify-between items-center">
+            <div class="flex justify-center items-center">
+                <span class="font-Armata text-[#222221] text-6xl md:text-[300px] xl:text-[400px] uppercase leading-[120%] -tracking-[32px]">4</span>
+                <svg width="411" height="428" viewBox="0 0 411 428" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M255.5 215C255.5 243.498 233.284 266.5 206 266.5C178.716 266.5 156.5 243.498 156.5 215C156.5 186.502 178.716 163.5 206 163.5C233.284 163.5 255.5 186.502 255.5 215Z"
+                          fill="#AA9A80" stroke="#222221" stroke-width="3"/>
+                    <path d="M278.5 215C278.5 256.754 245.985 290.5 206 290.5C166.015 290.5 133.5 256.754 133.5 215C133.5 173.246 166.015 139.5 206 139.5C245.985 139.5 278.5 173.246 278.5 215Z"
+                          stroke="#222221" stroke-width="3"/>
+                    <path d="M301.5 215C301.5 270.01 258.687 314.5 206 314.5C153.313 314.5 110.5 270.01 110.5 215C110.5 159.99 153.313 115.5 206 115.5C258.687 115.5 301.5 159.99 301.5 215Z"
+                          stroke="#222221" stroke-width="3"/>
+                    <path d="M324.5 215C324.5 283.265 271.389 338.5 206 338.5C140.611 338.5 87.5 283.265 87.5 215C87.5 146.735 140.611 91.5 206 91.5C271.389 91.5 324.5 146.735 324.5 215Z"
+                          stroke="#222221" stroke-width="3"/>
+                    <path d="M347.5 215C347.5 296.521 284.091 362.5 206 362.5C127.909 362.5 64.5 296.521 64.5 215C64.5 133.479 127.909 67.5 206 67.5C284.091 67.5 347.5 133.479 347.5 215Z"
+                          stroke="#222221" stroke-width="3"/>
+                    <path d="M370.5 215C370.5 309.776 296.793 386.5 206 386.5C115.207 386.5 41.5 309.776 41.5 215C41.5 120.224 115.207 43.5 206 43.5C296.793 43.5 370.5 120.224 370.5 215Z"
+                          stroke="#222221" stroke-width="3"/>
+                    <line x1="205.5" y1="2" x2="205.5" y2="428" stroke="#222221" stroke-width="3"/>
+                    <line x1="204.5" y1="-0.00350466" x2="205.5" y2="427.996" stroke="#222221" stroke-width="3"/>
+                    <path d="M231.5 215C231.5 230.238 219.586 242.5 205 242.5C190.414 242.5 178.5 230.238 178.5 215C178.5 199.762 190.414 187.5 205 187.5C219.586 187.5 231.5 199.762 231.5 215Z"
+                          stroke="#0F0F0F" stroke-width="3"/>
+                    <line x1="411" y1="214.5" y2="214.5" stroke="#222221" stroke-width="3"/>
+                    <line x1="257" y1="214.5" x2="155" y2="214.5" stroke="#0F0F0F" stroke-width="3"/>
+                    <line x1="204.5" y1="162" x2="204.5" y2="268" stroke="#0F0F0F" stroke-width="3"/>
+                </svg>
+                <span class="font-Armata text-[#222221] text-6xl md:text-[300px] xl:text-[400px] uppercase leading-[120%] -tracking-[32px]">4</span>
+            </div>
+            <p class="text-center text-[#E1DEB3] text-lg sm:text-[26px] mb-14 font-normal">Ошибка 404. Страницы не существует или он
+                была удалена.</p>
+            <button class="group btn__custom py-4 mb-10 bg-transparent border border-[#2D2D2B]">
+                <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l transition-opacity "></span>
+                <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l  transition-opacity"></span>
+                <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r  transition-opacity"></span>
+                <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r transition-opacity"></span>
+                <span class="btn__content">На главную страницу</span>
+            </button>
+        </div>
+        <img src="/img/sticks.svg" alt="">
+    </div>
+</main>
+</body>
+</html>

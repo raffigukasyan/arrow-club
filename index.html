@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/arrow-club/main.js"></script>
+    <link rel="modulepreload" crossorigin href="/arrow-club/assets/script-a090d2c6.js">
+    <link rel="modulepreload" crossorigin href="/arrow-club/assets/tabs-0d1d1a23.js">
+    <link rel="stylesheet" href="/arrow-club/style.css">
+  </head>
+  <body class="w-full relative h-full bg-[#0F0F0F] font-Grtsk">
+  <header id="header-navigation" class="sticky top-0 bg-[#0F0F0F] z-[30]">
+    <nav  class="flex items-center justify-between relative p-6 sm:px-[30px] lg:py-5 z-20 transition duration-500" aria-label="Global">
+      <div class="flex items-center gap-x-12">
+        <a href="#" class="">
+          <img class="h-8 w-auto" src="/arrow-club/img/headerLogo.svg" alt="">
+        </a>
+        <div class="hidden lg:block">
+          <ul class="flex items-center lg:gap-x-9">
+            <li><a href="#" class="lg:hidden xl:block text-lg leading-6 text-white font-normal">Стрельба</a></li>
+            <li><a href="#" class="lg:hidden book:block text-lg leading-6 text-white font-normal">Подарочные карты</a></li>
+            <li><a href="#" class="lg:hidden 2xl:block text-lg leading-6 text-white font-normal">Мероприятия</a></li>
+            <li class="dropdown-link link-ic">
+              <div class="flex gap-x-2 items-center">
+                <a href="#" class="lg:hidden 3xl:block text-lg leading-6 text-white font-normal">О клубе</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 13 9" class="linkIcon transition-transform" fill="none">
+                  <path d="M12.3604 1.14004L6.36035 7.86005L0.360351 1.14004" stroke="white" stroke-width="0.923077"/>
+                </svg>
+              </div>
+              <div class="dropdown max-w-[275px] z-10 absolute top-[4.5rem] hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+                <ul class="py-2 text-sm">
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-link">
+              <div id="dropdownDefaultButton" class="p-2">
+                <img src="/arrow-club/img/dot.svg"/>
+              </div>
+              <div class="dropdown max-w-[275px] z-10 absolute top-[4rem] hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+                <ul class="py-2 text-sm " aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Галерея</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Раздевалки</a>
+                  </li>
+                  <li class="lg:block xl:hidden">
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Стрельба</a>
+                  </li>
+                  <li class="lg:block xl:hidden">
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Подарочные карты</a>
+                  </li>
+                  <li class="lg:block 2xl:hidden">
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Мероприятия</a>
+                  </li>
+                  <li class="lg:block 3xl:hidden">
+                    <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">О клубе</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="dropdown-link relative cursor-pointer">
+            <div class="dropdown max-w-[275px] z-10 absolute top-6 hidden bg-[rgba(31,_31,_31,_0.50)] backdrop-blur-xl divide-y rounded-lg shadow w-44">
+              <ul class="py-2 text-sm " aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Парковка</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Арсенал</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Галерея</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Раздевалки</a>
+                </li>
+                <li class="lg:block xl:hidden">
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Стрельба</a>
+                </li>
+                <li class="lg:block xl:hidden">
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Подарочные карты</a>
+                </li>
+                <li class="lg:block 2xl:hidden">
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">Мероприятия</a>
+                </li>
+                <li class="lg:block 3xl:hidden">
+                  <a href="#" class="block px-4 py-2 text-white opacity-50 hover:opacity-100">О клубе</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:hidden flex items-center gap-x-5">
+        <a class="text-lg font-normal text-white" href="tel:+78325463143">+7 832 546 31 43</a>
+        <div data-burger="menu" type="button" class="burger__menu w-[50px] h-[38px] bg-[#222220]">
+          <div class="burger__menu-line one" style="transition: opacity .2s, transform .3s;"></div>
+          <div class="burger__menu-line two" style="transition: opacity .2s, transform .3s;"></div>
+          <div class="burger__menu-line three" style="transition: opacity .2s, transform .3s;"></div>
+          <div class="burger__menu-line four" style="transition: opacity .2s, transform .3s;"></div>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-x-3 xl:gap-x-8">
+        <a class="hidden lg:block text-lg font-normal text-white" href="tel:+78325463143">+7 832 546 31 43</a>
+        <div class="w-[1px] h-9 bg-[rgba(255,_255,_255,_0.16)]"></div>
+        <div class="flex items-center gap-x-2">
+          <a href="#"><img src="/arrow-club/img/whatsapp.svg" alt=""></a>
+          <a href="#"><img src="/arrow-club/img/vk.svg" alt=""></a>
+          <a href="#"><img src="/arrow-club/img/telegram.svg" alt=""></a>
+        </div>
+        <button class="flex justify-between items-center px-[30px] py-5 bg-[#1A1A19] group hover:bg-[#B9AB91] transition-colors">
+          <span class="text-lg font-normal text-white mr-4 group-hover:text-[#222220]">Даниил</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="white">
+            <path d="M10 3.33329C8.15905 3.33329 6.66667 4.82568 6.66667 6.66663C6.66667 8.50758 8.15905 9.99996 10 9.99996C11.8409 9.99996 13.3333 8.50758 13.3333 6.66663C13.3333 4.82568 11.8409 3.33329 10 3.33329ZM5 6.66663C5 3.9052 7.23858 1.66663 10 1.66663C12.7614 1.66663 15 3.9052 15 6.66663C15 9.42805 12.7614 11.6666 10 11.6666C7.23858 11.6666 5 9.42805 5 6.66663ZM6.66667 15C5.28595 15 4.16667 16.1192 4.16667 17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5C2.5 15.1988 4.36548 13.3333 6.66667 13.3333H13.3333C15.6345 13.3333 17.5 15.1988 17.5 17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5C15.8333 16.1192 14.714 15 13.3333 15H6.66667Z"/>
+          </svg>
+        </button>
+        <button data-btn="reservation" class="flex justify-between items-center px-[30px] py-5 bg-[#222220] group hover:bg-[#B9AB91] transition-colors">
+          <span class="text-lg font-normal text-[#E1DEB3] mr-4 group-hover:text-[#222220]">Забронировать</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="#E1DEB3">
+            <g clip-path="url(#clip0_85_26684)">
+              <rect x="2.1875" y="3.66797" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-45 2.1875 3.66797)"/>
+              <rect x="16.3203" y="2.18408" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(45 16.3203 2.18408)"/>
+              <rect x="17.8281" y="16.3276" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(135 17.8281 16.3276)"/>
+              <rect x="3.66406" y="17.8164" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-135 3.66406 17.8164)"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_85_26684">
+                <rect width="20" height="20" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <!-- <a href="#" class="text-sm font-normal leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a> -->
+      </div>
+    </nav>
+
+    <div class="dialog__wrapper w-full h-full fixed left-0 top-0 bg-[rgba(15,_15,_15,_0.90)] z-10 opacity-0 invisible" style="transition: opacity .3s, visibility .1s;"></div>
+
+
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden flex flex-col justify-between  w-full h-[0%] fixed bottom-0 bg-[#1B1B1A] z-30 dialog" role="dialog" aria-modal="true" style="transition: height .3s;">
+
+<!--      КНОПКА ЛИЧНЕГО КАБИНЕТА ПОКА ЧТО СКРЫТ-->
+<!--      <div class="flex items-center gap-x-4 px-4 py-7">-->
+<!--        <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="white">-->
+<!--          <path d="M10 3.33329C8.15905 3.33329 6.66667 4.82568 6.66667 6.66663C6.66667 8.50758 8.15905 9.99996 10 9.99996C11.8409 9.99996 13.3333 8.50758 13.3333 6.66663C13.3333 4.82568 11.8409 3.33329 10 3.33329ZM5 6.66663C5 3.9052 7.23858 1.66663 10 1.66663C12.7614 1.66663 15 3.9052 15 6.66663C15 9.42805 12.7614 11.6666 10 11.6666C7.23858 11.6666 5 9.42805 5 6.66663ZM6.66667 15C5.28595 15 4.16667 16.1192 4.16667 17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5C2.5 15.1988 4.36548 13.3333 6.66667 13.3333H13.3333C15.6345 13.3333 17.5 15.1988 17.5 17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5C15.8333 16.1192 14.714 15 13.3333 15H6.66667Z"/>-->
+<!--        </svg>-->
+<!--        <span class="text-lg font-normal text-white">Даниил</span>-->
+<!--      </div>-->
+      <div class="w-full h-[1px] bg-[#363636]"></div>
+      <div class="flex overflow-x-auto flex-col gap-y-[18px] px-4 py-7">
+        <a href="" class="text-[28px] font-normal text-white">Стрельба</a>
+        <a href="" class="text-[28px] font-normal text-white">Подарочные карты</a>
+        <a href="" class="text-[28px] font-normal text-white">Мероприятия</a>
+        <a href="" class="text-[28px] font-normal text-white">О клубе</a>
+        <a href="" class="text-base text-[#878787] font-normal">Парковка</a>
+        <a href="" class="text-base text-[#878787] font-normal">Арсенал</a>
+        <a href="" class="text-base text-[#878787] font-normal">Галереи</a>
+        <a href="" class="text-base text-[#878787] font-normal">Раздевалки</a>
+        <a href="" class="text-base text-[#878787] font-normal">Соревнования</a>
+      </div>
+      <div class="w-full h-[1px] bg-[#363636]"></div>
+      <div class="flex flex-col justify-center px-4 py-7">
+        <div class="flex justify-between items-center mb-[16px]">
+          <a class="bg-[url('/img/phone.svg')] bg-no-repeat bg-[left_5px] pl-8 text-white text-[17px]">+7 832 546 31 43</a>
+          <div class="flex items-center">
+            <img src="/arrow-club/img/whatsapp.svg"/>
+            <img src="/arrow-club/img/vk.svg"/>
+            <img src="/arrow-club/img/telegram.svg"/>
+          </div>
+        </div>
+        <button data-btn="reservation" class="flex justify-center items-center w-full py-6 bg-[#222220] group hover:bg-[#E1DEB3]">
+          <span class="text-lg font-normal text-[#E1DEB3] mr-4 group-hover:text-[#222220]">Забронировать</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[#222220]" width="20" height="20" viewBox="0 0 20 20" fill="#E1DEB3">
+            <g clip-path="url(#clip0_85_26684)">
+              <rect x="2.1875" y="3.66797" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-45 2.1875 3.66797)"/>
+              <rect x="16.3203" y="2.18408" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(45 16.3203 2.18408)"/>
+              <rect x="17.8281" y="16.3276" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(135 17.8281 16.3276)"/>
+              <rect x="3.66406" y="17.8164" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-135 3.66406 17.8164)"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_85_26684">
+                <rect width="20" height="20" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+    </div>
+  </header>
+    <main class="w-full">
+      <section class="w-full h-[733px] md:h-[800px] flex items-end md:block mb-[80px] sm:mb-[180px]">
+        <div class="relative">
+          <video width="100%" height="" loop="" autoplay="" playsinline="" muted="" class="hidden md:block" src="/video/backgroundVideo.mp4"></video>
+          <video width="100%" height="600px" loop="" autoplay="" playsinline="" muted="" class="md:hidden block" src="/video/backMobile.webm"></video>
+          <div class="absolute bottom-10 3xl:left-[60px] container bg-[linear-gradient(180deg,_rgba(15,_15,_15,_0.00)_0%,_#0F0F0F_100%)] sm:bg-none">
+            <div class="sm:pl-5 2xl:pl-0 md:pt-[60px]">
+              <h1 class="max-w-[350px] text-[40px] leading-[44px] md:max-w-[720px] md:text-[82px] font-semibold uppercase text-white md:leading-[90px] mb-6 md:mb-11">
+                <br><br><br><br>
+              </h1>
+              <p class="max-w-[435px] text-sm md:text-xl font-normal leading-5 md:leading-6 text-white mb-11 md:mb-16">
+                Стрелковый клуб 7.62 – место концентрации и энергии, где состредоточенность и меткость воплощаются в идеальном выстреле.
+              </p>
+              <button data-btn="reservation" class="flex gap-x-3 items-center w-full sm:w-auto justify-center sm:px-[90px]
+            py-6 md:px-10 md:py-8 bg-[#B9AB91]
+            ">
+                <span>Забронировать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <g clip-path="url(#clip0_85_26403)">
+                    <rect x="2.1875" y="4.66797" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-45 2.1875 4.66797)" fill="black"/>
+                    <rect x="16.3203" y="3.18408" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(45 16.3203 3.18408)" fill="black"/>
+                    <rect x="17.8281" y="17.3276" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(135 17.8281 17.3276)" fill="black"/>
+                    <rect x="3.66406" y="18.8164" width="2.1055" height="7.89564" rx="1.05275" transform="rotate(-135 3.66406 18.8164)" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_85_26403">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <img class="hidden sm:block" src="/arrow-club/img/arr.svg"/>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[80px] sm:mb-[180px]">
+          <div class="container px-4 sm:px-5 md:px-10 3xl:px-0">
+            <h2 class="text-3xl sm:text-6xl font-medium leading-[36px] sm:leading-[72px] text-white uppercase mb-8">программы</h2>
+            <div id="program" class="relative">
+              <div class=" flex gap-x-5 flex-nowrap mb-8 sm:mb-16 overflow-x-auto 2xl:overflow-hidden overflow-y-hidden">
+                <button class="group  btn__custom bg-transparent border border-[#2D2D2B]" data-filter="false">
+                  <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                  <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                  <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                  <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                  <span class="btn__content">Первое посещение</span>
+                </button>
+                    <!-- <div class="w-[1px] h-full bg-[#383837]"></div> -->
+                  <!-- <button class="btn-primay" data-filter="all">Пистолет</button> -->
+                <div class="flex gap-x-5 nav-gung">
+                  <button class="active group btn__custom bg-transparent border border-[#2D2D2B]" data-gun="pistol">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="btn__content">Пистолет</span>
+                  </button>
+                  <button class="group  btn__custom bg-transparent border border-[#2D2D2B]" data-gun="rifle">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="btn__content">Винтовка</span>
+                  </button>
+                  <button class="group  btn__custom bg-transparent border border-[#2D2D2B]" data-gun="carbine">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="btn__content">Карабин</span>
+                  </button>
+                  <button class="group  btn__custom bg-transparent border border-[#2D2D2B]" data-gun="traumatic">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="btn__content">Травматическое</span>
+                  </button>
+                  <button class="group  btn__custom bg-transparent border border-[#2D2D2B]" data-gun="empty">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91] opacity-0 transition-opacity group-hover:opacity-100"></span>
+                    <span class="btn__content">Охолощенное</span>
+                  </button>
+                </div>
+              </div>
+              <div id="program-reserved" class="flex flex-wrap sm:gap-x-5 justify-center gap-y-5 md:justify-start">
+                <div data-id="71" class="flex blockGung flex-col justify-between items-start basis-[414px] p-[18px_18px_32px_18px] bg-[#1A1A19]">
+                  <div class="flex flex-col items-start mb-[24px]">
+                    <div class="w-full h-[189px] sm:h-[243px] bg-[#222220] mb-[32px]">
+                      <img class="w-full h-full object-cover" src="/arrow-club/img/slide1.png" alt="">
+                    </div>
+                    <h3 class="text-[16px] sm:text-xl font-medium leading-[24px] text-white mb-3 sm:mb-[18px] break-words">Курс молодогоd sdfsd s</h3>
+                    <p class="text-sm sm:text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)] mb-[18px] break-words">Программы, включающие обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                    <a class="text-white text-sm sm:text-[16px] font-normal underline" href="">Подробнее</a>
+                  </div>
+                  <div class="flex w-full items-center justify-between pt-[25px] border-t border-[#2D2D2B]">
+                    <span class="text-white text-base sm:text-xl font-normal">20 500 ₽</span>
+                    <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                  </div>
+                </div>
+                <div data-id="74" class="flex blockGung flex-col justify-between items-start basis-[414px] p-[18px_18px_32px_18px] bg-[#1A1A19]">
+                  <div class="flex flex-col items-start mb-[24px]">
+                    <div class="w-full h-[243px] bg-[#222220] mb-[32px]">
+                      <img class="w-full h-full object-cover" src="/arrow-club/img/slide1.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодогоd sdfsd s</h3>
+                    <p class=" text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)] mb-[18px]">Программы, е обучение навыкам безопасного обращения с оружием, метк е обучение навыкам безопасного обращения с оружием, метк е обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                  </div>
+                  <div class="flex w-full items-center justify-between pt-[25px] border-t border-[#2D2D2B]">
+                    <span class="text-white text-xl font-normal">20 500 ₽</span>
+                    <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                  </div>
+                </div>
+                <div data-id="73" class="flex blockGung flex-col justify-between items-start basis-[414px] p-[18px_18px_32px_18px] bg-[#1A1A19]">
+                  <div class="flex flex-col items-start mb-[24px]">
+                    <div class="w-full h-[243px] bg-[#222220] mb-[32px]">
+                      <img class="w-full h-full object-cover" src="/arrow-club/img/slide1.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium leading-[24px] text-white mb-[18px]">Курс молодогоd sdfsd s</h3>
+                    <p class=" text-[16px] font-normal leading-5 text-[rgba(255,_255,_255,_0.40)] mb-[18px]">Программы, е обучение навыкам безопасного обращения с оружием, метк е обучение навыкам безопасного обращения с оружием, метк е обучение навыкам безопасного обращения с оружием, меткой и быстрой стрельбы...</p>
+                    <a class="text-white text-[16px] font-normal underline" href="">Подробнее</a>
+                  </div>
+                  <div class="flex w-full items-center justify-between pt-[25px] border-t border-[#2D2D2B]">
+                    <span class="text-white text-xl font-normal">20 500 ₽</span>
+                    <button class="flex justify-center items-start py-[18px] px-[30px] bg-[#272723] text-white text-base btn font-normal">Забронировать</button>
+                  </div>
+                </div>
+              </div>
+              <div id="modalRes"></div>
+              </div>
+      </section>
+      <section class="w-full px-4 py-[60px] sm:py-[90px] bg-[#1B1B1A] mb-20 sm:mb-44">
+      <div class="swiper mySwiper pb-[7rem]">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-[20px] sm:mb-20 lg:gap-x-10 xl:gap-x-0 gap-x-0 sm:px-5 lg:px-[90px]">
+            <h2 class="max-w-[704px] text-3xl leading-9 md:text-6xl text-white font-medium md:leading-[72px] uppercase mb-5 lg:mb-0">о стрелковом клубе 7.62</h2>
+            <div class="max-w-[498px] text-[#878787] text-[15px] sm:text-xl font-normal leading-5 sm:leading-7">
+                Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками
+            </div>
+            <div class="hidden lg:inline-flex p-6 gap-9 bg-[#242423]">
+              <button class="custom-prev disabled:opacity-10 group  transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                  <path d="M15 26L1 13.5L15 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                </svg>
+              </button>
+              <div class="w-[1px] h-7 bg-[#383837]"></div>
+              <button class="custom-next disabled:opacity-10 group transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                  <path d="M1 26L15 13.5L1 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                </svg>
+              </button>
+              </div>
+            </div>
+        <div class="swiper-wrapper pl-0">
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide1.png"/>
+            <p class="absolute pl-[20px] pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white text-[13px] sm:text-[17px] max-w-[350px] sm:max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide1.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide1.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+          <div class="swiper-slide relative max-w-[856px]">
+            <img src="/arrow-club/img/slide2.png"/>
+            <p class="absolute md:pl-[20px] md:pb-[20px] lg:pl-[50px] lg:pb-[50px] bottom-0 z-50 text-white max-w-[500px]">Мы гордимся тем, что предоставляем клиентам возможность ощутить себя настоящими стрелками</p>
+          </div>
+        </div>
+        <div class="pagination__custom absolute top-20 py-2"></div>
+        <div class="inline-flex lg:hidden">
+              <button class="absolute py-4 px-5 bottom-4 left-0 bg-[#242423] custom-prev z-40">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                  <path d="M15 26L1 13.5L15 0.999999" stroke="white"/>
+                </svg>
+              </button>
+              <button class="absolute py-4 px-5 z-40 right-0 bottom-4 bg-[#242423] custom-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                  <path d="M1 26L15 13.5L1 0.999999" stroke="white"/>
+                </svg>
+              </button>
+        </div>
+      </div>
+      </section>
+      <section class="block mb-20 sm:mb-[180px]">
+        <div class="container px-[15px] 3xl:px-0">
+          <div class="swiper myGallerey">
+            <div class="flex justify-between items-start flex-col lg:items-center lg:flex-row mb-8 sm:mb-16">
+            <h2 class="max-w-[704px] text-3xl sm:text-6xl text-white font-medium leading-[36px] md:leading-[72px] uppercase mb-6">галереи</h2>
+              <div class="hidden lg:block justify-end" id="photoPagination">
+                <div data-slide="0" class="slidePhoto-pagination__one slidePhoto-pagination hidden active p-6 gap-9 bg-[#1A1A19]">
+                  <button class="myGallerey-customOne-prev group disabled:opacity-10 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                      <path d="M15 26L1 13.5L15 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="w-[1px] h-7 bg-[#383837]"></div>
+                  <button class="myGallerey-customOne-next group disabled:opacity-10 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                      <path d="M1 26L15 13.5L1 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                    </svg>
+                  </button>
+                </div>
+                <div data-slide="1" class="slidePhoto-pagination__two slidePhoto-pagination hidden p-6 gap-9 bg-[#1A1A19]">
+                  <button class="myGallerey-customTwo-prev group disabled:opacity-10 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                      <path d="M15 26L1 13.5L15 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="w-[1px] h-7 bg-[#383837]"></div>
+                  <button class="myGallerey-customTwo-next group disabled:opacity-10 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                      <path d="M1 26L15 13.5L1 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                    </svg>
+                  </button>
+                </div>
+                <div data-slide="2" class="slidePhoto-pagination__three slidePhoto-pagination hidden p-6 gap-9 bg-[#1A1A19]">
+                  <button class="myGallerey-customThree-prev group disabled:opacity-10 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                      <path d="M15 26L1 13.5L15 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="w-[1px] h-7 bg-[#383837]"></div>
+                  <button class="myGallerey-customThree-next group disabled:opacity-10 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                      <path d="M1 26L15 13.5L1 0.999999" class="transition-colors group-hover:stroke-[#B9AB91]" stroke="white"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="hidden lg:flex swiper-pagination__gallerey w-[1030px] absolute pr-8 pb-8  justify-between  right-0 bottom-0 z-[9999]" style="width: fit-content;  left: inherit;"></div>
+              <div class="w-full lg:hidden overflow-y-scroll">
+                <div class=" w-full flex justify-start  swiper-pagination__mobile  gap-x-4 lg:hidden  top-0 right-0 z-[9999]" style="width: 100%"></div>
+              </div>
+            </div>
+              <div class="swiper-wrapper">
+                <div data-slide-value="50 asdsad" class="swiper-slide flex w-full flex-col-reverse lg:flex-row">
+                  <div class="flex md:min-w-[350px] xl:min-w-[420px] w-full lg:w-[642px] flex-col justify-between items-start bg-[#1B1B1A] py-[28px] px-[18px] md:p-[25px] xl:p-[50px]">
+                    <div class="max-w-[300px] sm:max-w-full">
+                      <h2 class="text-[22px] sm:text-[44px] font-medium leading-[52px] text-white mb-6">50 метров</h2>
+                      <p class="text-[15px] sm:text-[18px] font-normal leading-[25px] text-[rgba(255,_255,_255,_0.40)] mb-6">Наша галерея предлагает диапазон стрельбы на расстоянии до 300 метров, что делает нас одним из самых длинных и современных стрелковых комплексов в регионе.</p>
+                    </div>
+                    <button class="btn__custom hover:active md:px-[48px] w-full md:w-auto py-[23px] bg-transparent border border-[#2D2D2B]">
+                      <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                      <span class="btn__content">Подробнее</span>
+                    </button>
+                  </div>
+                  <div class="flex items-end max-w-[1098px] h-[375px] sm:h-[475px] md:h-[639px]">
+                      <div class="swiper myPhotoOne w-full h-full">
+                        <div class="swiper-wrapper wrapperPhoto">
+                          <div class="swiper-slide w-full h-full">
+                            <img class="w-full h-full object-cover" src="/arrow-club/img/gal.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="/arrow-club/img/slide1.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="/arrow-club/img/slide2.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="/arrow-club/img/gal.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="/arrow-club/img/slide2.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div data-slide-value="100 qedsad" class="swiper-slide flex w-full flex-col-reverse lg:flex-row">
+                  <div class="flex md:min-w-[350px] xl:min-w-[420px] w-full lg:w-[642px] flex-col justify-between items-start bg-[#1B1B1A] py-[28px] px-[18px] md:p-[25px] xl:p-[50px]">
+                    <div class="max-w-[300px] sm:max-w-[419px]">
+                      <h2 class="text-[22px] sm:text-[44px] font-medium leading-[52px] text-white mb-6">50 метров</h2>
+                      <p class="text-[15px] sm:text-[18px] font-normal leading-[25px] text-[rgba(255,_255,_255,_0.40)] mb-6">Наша галерея предлагает диапазон стрельбы на расстоянии до 300 метров, что делает нас одним из самых длинных и современных стрелковых комплексов в регионе.</p>
+                    </div>
+                    <button class="btn__custom hover:active md:px-[48px] w-full md:w-auto py-[23px] bg-transparent border border-[#2D2D2B]">
+                      <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                      <span class="btn__content">Подробнее</span>
+                    </button>
+                  </div>
+                  <div class="flex items-end max-w-[1098px] h-[375px] sm:h-[475px] md:h-[639px]">
+                    <div class="swiper myPhotoTwo w-full h-full">
+                      <div class="swiper-wrapper wrapperPhoto">
+                        <div class="swiper-slide w-full h-full">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/gal.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/slide1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/slide2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/gal.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/slide2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-slide-value="300 dasd" class="swiper-slide flex w-full flex-col-reverse lg:flex-row">
+                  <div class="flex md:min-w-[350px] xl:min-w-[420px] w-full lg:w-[642px] flex-col justify-between items-start bg-[#1B1B1A] py-[28px] px-[18px] md:p-[25px] xl:p-[50px]">
+                    <div class="max-w-[300px] sm:max-w-[419px]">
+                      <h2 class="text-[22px] sm:text-[44px] font-medium leading-[52px] text-white mb-6">50 метров</h2>
+                      <p class="text-[15px] sm:text-[18px] font-normal leading-[25px] text-[rgba(255,_255,_255,_0.40)] mb-6">Наша галерея предлагает диапазон стрельбы на расстоянии до 300 метров, что делает нас одним из самых длинных и современных стрелковых комплексов в регионе.</p>
+                    </div>
+                    <button class="btn__custom hover:active md:px-[48px] w-full md:w-auto py-[23px] bg-transparent border border-[#2D2D2B]">
+                      <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                      <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                      <span class="btn__content">Подробнее</span>
+                    </button>
+                  </div>
+                  <div class="flex items-end max-w-[1098px] h-[375px] sm:h-[475px] md:h-[639px]">
+                    <div class="swiper myPhotoThree w-full h-full">
+                      <div class="swiper-wrapper wrapperPhoto">
+                        <div class="swiper-slide w-full h-full">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/gal.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/slide1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/slide2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/gal.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img class="w-full h-full object-cover" src="/arrow-club/img/slide2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="w-full flex flex-col justify-end sm:justify-center relative h-[648px] sm:h-[981px] mb-[80px] sm:mb-[180px]" style="background: radial-gradient(59.14% 59.12% at 64.82% 49.95%, rgba(15, 15, 15, 0.00) 0%, #0F0F0F 100%), url('/arrow-club/img/map.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="container sm:px-5 md:px-10  3xl:px-0">
+          <div class="hidden sm:flex route__tabs justify-center lg:justify-between items-center xl:pl-5 2xl:pl-0">
+            <div class="flex basis-[556px] flex-col items-start justify-between py-[50px] px-[55px] bg-[#1B1B1A]">
+              <h2 class="text-6xl font-medium leading-[72px] uppercase text-white mb-16">Маршрут</h2>
+              <p class="text-[26px] font-medium leading-[26px] text-white mb-[24px]">Как добраться</p>
+              <div class="tabs__head flex mb-[32px] py-[5px] bg-[#242423]">
+                <div class="tabs__caption py-[17px] px-12 text-white bg-transparent cursor-pointer transition-colors" data-tab="metro">От метро</div>
+                <div class="tabs__caption py-[17px] px-12 text-white bg-transparent cursor-pointer transition-colors" data-tab="car">На машине</div>
+              </div>
+              <div class="tabs__body ">
+                <div class="tabs__content flex-col items-start" data-tab="metro">
+                <div class="min-h-[300px]">
+                  <p class="text-[18px] font-normal leading-6 text-[#878787] sm:mb-6">Начните с метро Новокузнецкая,  которое находится на арбатско-покровской  и замоскворецкой линиях московского метрополитена.</p>
+                  <p class="text-[18px] font-normal leading-6 text-[#878787]  sm:mb-[44px]">Продвигайтесь на юг по улице Новокузнецкая. Продолжайте идти до тех пор, пока не достигнете Красного Октября проспекта. Это займет примерно 10-15 минут пешком.</p>
+                </div>
+                  <a href="https://yandex.ru/maps/213/moscow/?ll=37.503243%2C55.787245&mode=routes&rtext=~55.786587%2C37.498517&rtt=mt&ruri=~&z=15" target="_blank"
+                     class="btn__custom hover:active px-[50px] py-[25px] bg-transparent border border-[#2D2D2B]">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="btn__content">Построить маршрут</span>
+                  </a>
+                </div>
+                <div class="tabs__content flex-col items-start" data-tab="car">
+                  <div class="min-h-[300px]">
+                    <p class="text-[18px] font-normal leading-6 text-[#878787] mb-6">fsdfsdfsdfsdfsdfsdf</p>
+                    <p class="text-[18px] font-normal leading-6 text-[#878787] mb-[44px]">fsdfsdfsdfsd</p>
+                  </div>
+                  <a href="https://yandex.ru/navi/?whatshere%5Bzoom%5D=19&whatshere%5Bpoint%5D=37.498362%2C55.786608" target="_blank" class="btn__custom hover:active px-[50px] py-[25px] bg-transparent border border-[#2D2D2B]">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="btn__content">Построить маршрут</span>
+                  </a>
+                </div>
+              </div>
+
+                </div>
+              </div>
+            </div>
+        <div class="flex justify-center items-center sm:hidden ">
+          <button class="route__modal-btn py-6 px-12 sm:px-[98px] text-white btn bg-[#1B1B1A] transition">Построить маршрут</button>
+        </div>
+        <div class="w-full h-full fixed left-0 top-0 bg-[rgba(15,_15,_15,_0.90)] z-[9999999999999] opacity-0 invisible"></div>
+        <div id="route-modal" class="route__tabs translate-y-full left-0 mx-[14px] bottom-2 fixed z-50 flex invisible min-w-[94%] flex-col items-start pt-8 px-[18px] pb-[18px] bg-[#1B1B1A]" style="transition: transform .5s, visibility 1s;">
+              <h2 class="text-3xl font-medium leading-9 uppercase text-white mb-6">Маршрут</h2>
+              <p class="text-base font-medium leading-4 text-white mb-4">Как добраться</p>
+              <div class="tabs__head flex mb-6 py-[5px] bg-[#242423]">
+                <div class="tabs__caption text-sm py-4 px-8 text-white bg-transparent transition-colors " data-tab="metro">От метро</div>
+                <div class="tabs__caption py-4 px-8 text-[14px] text-white bg-transparent transition-colors" data-tab="car">На машине</div>
+              </div>
+              <div class="tabs__body w-full">
+                <div class="tabs__content flex-col justify-between mb-7" data-tab="metro">
+                <div class="min-h-[255px]">
+                  <p class="text-[15px] font-normal leading-5 text-[#878787] mb-4">Начните с метро Новокузнецкая,  которое находится на арбатско-покровской  и замоскворецкой линиях московского метрополитена.</p>
+                  <p class="text-[15px] font-normal leading-5 text-[#878787] mb-4">Продвигайтесь на юг по улице Новокузнецкая. Продолжайте идти до тех пор, пока не достигнете Красного Октября проспекта. Это займет примерно 10-15 минут пешком.</p>
+                </div>
+                  <a href="https://yandex.ru/maps/213/moscow/?ll=37.503243%2C55.787245&mode=routes&rtext=~55.786587%2C37.498517&rtt=mt&ruri=~&z=15" target="_blank" class="w-full btn__custom hover:active px-[50px] py-[25px] bg-transparent border border-[#2D2D2B]">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="btn__content">Построить маршрут</span>
+                  </a>
+                </div>
+                <div class="tabs__content flex flex-col justify-between mb-7" data-tab="car">
+                  <div class="min-h-[255px]">
+                    <p class="text-[15px] font-normal leading-5 text-[#878787] mb-4">Начнитпокровскетрополитена.</p>
+                    <p class="text-[15px] font-normal leading-5 text-[#878787] mb-4">Пт10-15 минут пешком.</p>
+                  </div>
+                  <a href="https://yandex.ru/maps/213/moscow/?ll=37.503243%2C55.787245&mode=routes&rtext=~55.786587%2C37.498517&rtt=mt&ruri=~&z=15" target="_blank" class="w-full btn__custom hover:active px-[50px] py-[25px] bg-transparent border border-[#2D2D2B]">
+                    <span class="absolute w-[24px] h-[24px] top-0 left-0 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 left-0 -rotate-90 border-t border-[#B8AA91] border-l border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] top-0 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="absolute w-[24px] h-[24px] bottom-0 rotate-90 right-0 border-t border-[#B8AA91] border-r border-[#B8AA91]"></span>
+                    <span class="btn__content">Построить маршрут</span>
+                  </a>
+                </div>
+        </div>
+        </div>
+      </section>
+      <section class="mb-[80px] sm:mb-[180px]">
+        <div class="container px-4 sm:px-5 flex flex-col md:px-10 3xl:px-0 sm:gap-x-7 lg:flex-row items-end">
+          <div class="flex flex-col w-full items-start mb-5">
+            <h2 class="title max-w-[704px] mb-4 sm:mb-14">у нас не только стреляют</h2>
+
+            <p class="md:hidden text-white text-left text-[15px] sm:text-xl font-normal leading-6 max-w-[454px] mb-8 sm:mb-20 opacity-50">Мы предлагаем гостям в перерывах между стрельбой посетить наши кафе и магазин с брендированными сувенирами</p>
+            <div class="w-full h-[315px] sm:h-[570px] bg-no-repeat bg-cover bg-center flex items-end justify-between py-5 px-4 md:px-8" style="background-image: url('/arrow-club/img/cafe.png');">
+              <div class="w-full flex items-center justify-between">
+                <h2 class="text-[22px] leading-7 sm:text-4xl font-medium sm:leading-[43px] uppercase text-white">кафе</h2>
+                <a href="#" class="sm:py-[25px] sm:px-10 py-5 px-[30px] bg-[rgba(15,_15,_15,_0.50)] backdrop-filter leading-5 text-white btn">Скоро открытие</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-full items-start mb-5">
+             <div class="w-full h-[315px] sm:h-[570px] flex items-end  bg-cover justify-between py-5 px-4 md:px-8" style="background-image: url('/arrow-club/img/market.png');">
+              <div class="w-full flex justify-between items-center">
+                <h2 class="text-[22px] leading-7 sm:text-4xl font-medium sm:leading-[43px] uppercase text-white">магазин</h2>
+                <a href="#" class="sm:py-[25px] sm:px-10 py-5 px-[30px] bg-[rgba(15,_15,_15,_0.50)] backdrop-filter font-normal leading-5 text-white btn">Скоро открытие</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-9 md:mb-[180px]">
+        <div class="container px-4 sm:px-5 md:px-10 3xl:px-0">
+          <div class="max-w-[783px]">
+            <p class="mb-9 text-[#878787] text-sm sm:text-xl font-normal leading-5">Подпишитесь, чтобы получать новости</p>
+            <div class="border-b flex justify-between gap-x-6 border-[#3A3A3A] pb-7 mb-9">
+              <input type="text" placeholder="E-mail" class="w-full border-none outline-none ring-offset-0 bg-transparent text-white text-[22px] placeholder:text-[#878787] placeholder:font-normal sm:text-6xl font-medium leading-5 sm:leading-[72px]"/>
+              <button class="py-5 px-6 bg-[#1F1F1F] btn group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" viewBox="0 0 28 18">
+                  <path class="group-hover:stroke-[#0F0F0F]" d="M0 9H26M26 9L18.525 1.5M26 9L18.525 16.5" stroke="white" stroke-width="1.5"/>
+                </svg>
+              </button>
+            </div>
+            <div class="inline-flex items-center">
+  <label
+    class="relative flex cursor-pointer items-center rounded-full p-3"
+    for="login"
+    data-ripple-dark="true"
+  >
+    <input
+      id="login"
+      type="checkbox"
+      class="before:content[''] peer relative w-[18px] h-[18px] sm:h-6 sm:w-6 cursor-pointer appearance-none border border-[rgba(58,_58,_58,_1)] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity hover:before:opacity-10"
+    />
+    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-3.5 w-3.5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        stroke="currentColor"
+        stroke-width="1"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </div>
+  </label>
+  <label
+    class="mt-px cursor-pointer select-none font-normal text-xs sm:text-lg text-[#878787]"
+    for="login"
+  >
+    Я прочитал и принимаю правила <a href="#" class="text-white text-xs sm:text-lg font-normal  underline"> Политики конфиденциальности</a>
+  </label>
+</div>
+          </div>
+        </div>
+      </section>
+<!--      <div class="container h-[1px] bg-[#3A3A3A] mb-[100px]"></div>-->
+    </main>
+    <footer class="pb-[60px]">
+      <div class="container px-4 lg:px-10 3xl:px-0">
+        <div class="w-full h-[1px] bg-[#3A3A3A] mb-[100px]"></div>
+        <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-y-11 sm:gap-x-6 md:gap-x-10 lg:gap-x-0 sm:h-[420px]">
+          <div class="w-full sm:w-auto flex flex-col justify-between  gap-0 h-full">
+            <img class="w-[60%] sm:w-full lg:w-[80%] xl:w-full" src="/arrow-club/img/footerLogo.svg"/>
+            <div class="hidden sm:flex items-center gap-x-2">
+              <a href="#"><img src="/arrow-club/img/whatsapp.svg" alt=""></a>
+              <a href="#"><img src="/arrow-club/img/vk.svg" alt=""></a>
+              <a href="#"><img src="/arrow-club/img/instagram.svg" alt=""></a>
+              <a href="#"><img src="/arrow-club/img/telegram.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="flex flex-col justify-between sm:h-full">
+            <div class="flex flex-col sm:flex-row justify-between items-baseline gap-y-11 mb-[42px] sm:mb-0 sm:gap-x-[30px] md:gap-x-[80px] lg:gap-x-[120px] 2xl:gap-x-[160px]">
+              <div class="">
+                <h4 class="text-white text-xl font-normal leading-5 mb-8">Стрельба</h4>
+                <div class="hidden sm:flex flex-col gap-y-4">
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Наши программы</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Арсенал</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Услуги</a>
+                  <a href="" class="text-lg font-normal leading-5 text-[#878787]">Инструкторы</a>
+                </div>
+                <div class="flex justify-between gap-x-8 sm:hidden">
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Наши программы</a>
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Арсенал</a>
+                  </div>
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Услуги</a>
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Инструкторы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="text-white text-xl font-normal leading-5 mb-8">О клубе</h4>
+                <div class="hidden sm:flex flex-col gap-y-4">
+                  <a href="" class="text-[15px] sm:text-lg font-normal leading-5 text-[#878787]">Наш клуб</a>
+                  <a href="" class="text-[15px] sm:text-lg font-normal leading-5 text-[#878787]">Новости</a>
+                  <a href="" class="text-[15px] sm:text-lg font-normal leading-5 text-[#878787]">Акции</a>
+                </div>
+                <div class="flex gap-x-8 sm:hidden">
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Наш клуб</a>
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Новости</a>
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Акции</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-white text-xl font-normal leading-5 mb-8">Наш комплекс</h4>
+                <div class="hidden sm:flex flex-col gap-y-4">
+                  <a href="" class="text-[15px] sm:text-lg font-normal leading-5 text-[#878787]">Магазин</a>
+                  <a href="" class="text-[15px] sm:text-lg font-normal leading-5 text-[#878787]">Ресторан</a>
+                </div>
+                <div class="sm:hidden flex gap-x-8">
+                  <div class="flex flex-col gap-y-[18px]">
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Магазин</a>
+                    <a href="" class="text-[15px] font-normal leading-5 text-[#878787]">Ресторан</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sm:hidden mb-[32px] border-b border-b-[#3A3A3A] pb-6 flex justify-between items-center">
+              <a href="#"><img src="/arrow-club/img/telegram.svg" alt=""></a>
+              <div class="w-[1px] h-[22px] bg-[#383837]"></div>
+              <a href="#"><img src="/arrow-club/img/vk.svg" alt=""></a>
+              <div class="w-[1px] h-[22px] bg-[#383837]"></div>
+              <a href="#"><img src="/arrow-club/img/instagram.svg" alt=""></a>
+              <div class="w-[1px] h-[22px] bg-[#383837]"></div>
+              <a href="#"><img src="/arrow-club/img/whatsapp.svg" alt=""></a>
+            </div>
+            <div class="flex gap-x-4">
+              <a href="#" class="block text-[16px] sm:text-lg font-normal text-white">Политика конфиденциальности</a>
+              <a href="#" class="block text-[16px] sm:text-lg font-normal text-white">Оплата и доставка</a>
+            </div>
+          </div>
+          <div class="w-full sm:hidden text-base text-center text-[#878787] font-normal leading-4">Тир 762 © 2023</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var baseUrl = 'https://762club.ru/';
+      var stateModal = {
+        value: {},
+        callbacks: [],
+        addcallback: function (callback) { this.callbacks.push(callback); },
+        setvalue: function (value) {
+          this.value = value;
+          this.callbacks.forEach(
+                  callback => callback(this.value)
+          );
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!--    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>-->
+<!--    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>-->
+<!--    <script type="module" src="js/slider.js"></script>-->
+    
+<!--  <script type="module" src="js/filterCourse.js"></script>-->
+  </body>
+</html>

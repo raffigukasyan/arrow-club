@@ -1,0 +1,16 @@
+<svg width="24" height="72" viewBox="0 0 24 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1568">
+<g id="Rectangle 61">
+<mask id="path-1-inside-1_183_75" fill="white">
+<path d="M24 0L24 24L-1.04907e-06 24L0 -1.04907e-06L24 0Z"/>
+</mask>
+<path d="M24 0L25 4.37114e-08L25 -1L24 -1L24 0ZM23 -4.37114e-08L23 24L25 24L25 4.37114e-08L23 -4.37114e-08ZM-4.37114e-08 0.999999L24 1L24 -1L4.37114e-08 -1L-4.37114e-08 0.999999Z" fill="#DCD8A6" mask="url(#path-1-inside-1_183_75)"/>
+</g>
+<g id="Rectangle 61_2">
+<mask id="path-3-inside-2_183_75" fill="white">
+<path d="M24 72L24 48L-1.04907e-06 48L0 72L24 72Z"/>
+</mask>
+<path d="M24 72L25 72L25 73L24 73L24 72ZM23 72L23 48L25 48L25 72L23 72ZM-4.37114e-08 71L24 71L24 73L4.37114e-08 73L-4.37114e-08 71Z" fill="#DCD8A6" mask="url(#path-3-inside-2_183_75)"/>
+</g>
+</g>
+</svg>

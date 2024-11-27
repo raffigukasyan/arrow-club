@@ -1,0 +1,1 @@
+import"./assets/script-a090d2c6.js";/* empty css                     */import{T as t}from"./assets/tabs-0d1d1a23.js";t(".route__tabs",".tabs__head",".tabs__body",".tabs__caption","tabs__caption_active","tabs__content_active");

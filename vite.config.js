@@ -5,7 +5,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react({ jsxRuntime: 'classic' })],
-  base: '/762-template',
+  base: '/arrow-club',
   root: 'src',
   build: {
     outDir: '../dist',
